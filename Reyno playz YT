@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reyno Playz - BGMI Gaming Channel</title>
+    <meta name="description" content="Reyno Playz is your ultimate BGMI gaming channel for intense gameplay, viral shorts, and live stream highlights.">
+    <meta name="keywords" content="BGMI, gaming, esports, Reyno Playz, YouTube, shorts, gameplay">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #111;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 255, 0, 0.5);
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff0000;
+            text-shadow: 0 0 10px #ff0000;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        nav ul li {
+            margin-left: 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+        }
+        .hero {
+            background: linear-gradient(135deg, #000, #111);
+            padding: 5rem 1rem 3rem;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #ff0000;
+            text-shadow: 0 0 20px #ff0000;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            margin: 0 0.5rem;
+            background-color: #ff0000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            box-shadow: 0 0 10px #ff0000;
+        }
+        .btn:hover {
+            background-color: #00ff00;
+            box-shadow: 0 0 20px #00ff00;
+            transform: scale(1.05);
+        }
+        .btn-secondary {
+            background-color: #00ff00;
+            box-shadow: 0 0 10px #00ff00;
+        }
+        .btn-secondary:hover {
+            background-color: #ff0000;
+            box-shadow: 0 0 20px #ff0000;
+        }
+        section {
+            padding: 3rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .videos, .shorts {
+            background-color: #111;
+        }
+        .videos h2, .shorts h2, .about h2, .features h2, .contact h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #ff0000;
+            text-shadow: 0 0 10px #ff0000;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+            border-radius: 5px;
+        }
+        .about {
+            background-color: #000;
+            text-align: center;
+        }
+        .about p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .features {
+            background-color: #111;
+        }
+        .features ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            text-align: center;
+        }
+        .features li {
+            padding: 1rem;
+            background-color: #222;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+        }
+        .features li:hover {
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+        }
+        .contact {
+            background-color: #000;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            background-color: #111;
+            border: 1px solid #00ff00;
+            color: #fff;
+            border-radius: 5px;
+        }
+        .contact button {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 0 10px #ff0000;
+        }
+        .contact button:hover {
+            background-color: #00ff00;
+            box-shadow: 0 0 20px #00ff00;
+        }
+        .social {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .social a {
+            display: inline-block;
+            margin: 0 1rem;
+            color: #fff;
+            text-decoration: none;
+            font-size: 2rem;
+            transition: color 0.3s;
+        }
+        .social a:hover {
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+        }
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 1rem;
+            color: #666;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Reyno Playz</div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#shorts">Shorts</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="hero" class="hero">
+        <h1>WELCOME TO REYNO PLAYZ</h1>
+        <p>Only Gamers Can Feel This Pain</p>
+        <a href="https://youtube.com/@reyno_playz_yt" class="btn">Subscribe on YouTube</a>
+        <a href="https://youtube.com/@reyno_playz_yt/shorts" class="btn btn-secondary">Watch BGMI Shorts</a>
+    </section>
+    <section id="videos" class="videos">
+        <h2>BGMI Gameplay Videos</h2>
+        <div class="video-grid">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="BGMI Video 1"></iframe>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="BGMI Video 2"></iframe>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="BGMI Video 3"></iframe>
+        </div>
+    </section>
+    <section id="shorts" class="shorts">
+        <h2>BGMI Shorts</h2>
+        <div class="video-grid">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="BGMI Short 1"></iframe>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="BGMI Short 2"></iframe>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="BGMI Short 3"></iframe>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Reyno Playz is a BGMI gaming channel featuring intense gameplay, clutch moments, viral shorts, and live stream highlights.</p>
+    </section>
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Pro BGMI Gameplay</li>
+            <li>Viral Gaming Shorts</li>
+            <li>Live Stream Highlights</li>
+            <li>Mobile Gaming Content</li>
+        </ul>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social">
+            <a href="https://youtube.com/@reyno_playz_yt" title="YouTube">📺</a>
+            <a href="https://www.instagram.com/reyno_playz" title="Instagram">📷</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Reyno Playz | All Rights Reserved</p>
+    </footer>
+    <script>
+        // Simple form submission (no backend, just prevent default)
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Message sent! (This is a demo)');
+        });
+    </script>
+</body>
+</html>
