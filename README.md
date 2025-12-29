@@ -1,4 +1,4 @@
-# Reyno-playz-YT-<!DOCTYPE html>
+# Reyno-playz-YT-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
