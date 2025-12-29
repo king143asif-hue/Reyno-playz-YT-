@@ -68,7 +68,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 Reyno Playz. All rights reserved.</p>
+        <p>&copy; 2025 Reynoo Playz. All rights reserved.</p>
         <a href="https://youtube.com/@reyno_playz_yt" target="_blank" rel="noopener">Follow us on YouTube</a>
     </footer>
 
